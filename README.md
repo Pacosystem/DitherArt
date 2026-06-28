@@ -1,2 +1,2 @@
 # DitherArt
-DitherArt is a little Software to add Dithering, Pixel Sort, and some dope effects in Images. Still Working on it, Rust learning Project. 
+DitherArt is a small software project for adding dithering, pixel sorting, and other dope image effects in images. It is still a work in progress and a Rust learning project.
