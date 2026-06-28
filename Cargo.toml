@@ -1,0 +1,26 @@
+[package]
+name = "ditherart"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ditherart"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.31", features = ["wayland", "wgpu"] }
+egui = "0.31"
+egui_extras = { version = "0.31", features = ["image"] }
+image = { version = "0.25", features = ["png", "jpeg", "gif"] }
+gif = "0.13"
+rayon = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+rfd = "0.15"
+parking_lot = "0.12"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
